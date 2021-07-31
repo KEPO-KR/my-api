@@ -1,4 +1,4 @@
-let arr = ['text'];
+let arr = [];
 function nb(p,z) {
   document.getElementById(p).innerHTML = '';
   for (let i = 0; i < arr.length; i++) {
