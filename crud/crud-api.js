@@ -1,4 +1,14 @@
-let arr = [];
+let arr = ['text'];
+function nb(p,z) {
+  document.getElementById(p).innerHTML = '';
+  for (let i = 0; i < arr.length; i++) {
+    let a = 'crud(\"'+z+'\","0","0",\"r\",'+i+')';
+    console.log(a);
+    let d = '<input type=\"button\" value=\"'+i+'\" onclick='+a+'>';
+    console.log(d);
+    document.getElementById(p).innerHTML+=d;
+  }
+}
 function crud(i,title,text,ops,index) {
   let id = document.getElementById(i);
   let html = '<h2>'+title+'</h2><br/><span>'+text+'</span>';
