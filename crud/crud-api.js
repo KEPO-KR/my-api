@@ -11,7 +11,7 @@ function crud(i,title,text,ops,index) {
     arr[index]=html;
     id.innerHTML = html;
   } else if (ops == 'd') {
-    arr.splice(index,1);
+    arr[index] = '<h2>404 error</h2><br/><span>게시글이 존재하지 않음</span>';
     id.innerHTML = '';
   }
   console.log(arr);
