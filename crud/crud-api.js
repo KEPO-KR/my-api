@@ -11,7 +11,7 @@ function crud(i,title,text,ops,index) {
     arr[index]=html;
     id.innerHTML = html;
   } else if (ops == 'd') {
-    arr.splice(index);
+    arr.splice(index+1,index);
     id.innerHTML = '';
   }
   console.log(arr);
